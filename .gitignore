@@ -3,6 +3,7 @@ config.py
 *.pyc
 __pycache__
 output
+scratch
 *.xlsx
 *.csv
 masters
