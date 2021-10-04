@@ -1,0 +1,8 @@
+*.json
+config.py
+*.pyc
+__pycache__
+output
+*.xlsx
+*.csv
+masters
