@@ -3,5 +3,3 @@ config.py
 *.pyc
 __pycache__
 scratch
-*.xlsx
-*.csv
