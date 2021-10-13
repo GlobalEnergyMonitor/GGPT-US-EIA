@@ -36,7 +36,7 @@ For gas plant data in the United States we rely entirely on the US Energy Inform
 [Form EIA-860M](https://www.eia.gov/electricity/data/eia860m/) has generator (unit) data.
 
 ***EIA806M Tables***
-* Single table with mutliple tabs for different statuses, formatetd like "july_generator2021.xlsx"
+* Single table with multiple tabs for different statuses, formatted like "july_generator2021.xlsx"
 
 
 ### Metadata
@@ -47,7 +47,7 @@ The "Layout" file contains reference tables for abbreviations and column definit
 The “Instructions” PDF in this download has code definitions as well, same as in Layout. In 2020 it was in Table 28 “Energy Source Codes and Heat Content”.
 
 Some notes:
-* There's some inconsitency in colmun names. "Plant Code" and "Plant ID" are the same, as are "Entity ID" and "Utility ID"
+* There's some inconsistency in colmun names. "Plant Code" and "Plant ID" are the same, as are "Entity ID" and "Utility ID"
 * Utility == operator (“Legal name of the company that is responsible for the day-to-day operations of the generator")
 * Combined cycle untis are broken out into their respective parts, but the "Unit Code" field identifies which go together into a block. (Unit Code: “All generators that operate as a unit have the same unit code”)
 * In the GGPT:
@@ -74,11 +74,6 @@ There's great instructions at [Cloning a repository](https://docs.github.com/en/
 * To use this code you can manually download it from this Github site as a zipped folder
 * You can also use Git in your own code editor or command line: `git clone https://github.com/GlobalEnergyMonitor/GGPT-US-EIA.git` in the local folder one step above where you want to save the files 
 
-### Pygsheets
-To programmatically access a Google sheet this code utilizes [Pygsheets](https://pygsheets.readthedocs.io/en/stable/). You will need to do an initial installation and authorize your code in Google Console following the steps at [Authorization](https://pygsheets.readthedocs.io/en/stable/authorization.html).
-
-After you authorize your code, you need a config.py file in your root directory for this project with your authorization details, which were saved for you. This file is a *secret* so it doesn't get added to the repo. You have to create it.
-
 ### Folder Structure and Example Filename Outputs
 * Your Local Folder --> install repo here 
     * scratch
@@ -92,7 +87,7 @@ Here is a look at the folder structure on my local machine. Many of these files 
 
 ### Steps Overview
 
-1. Manually download files from EIA websites linked above under "Data"
+1. Manually download files from EIA websites linked above (and save in the repo's data folder)
 2. Run Jupyter notebook
 3. Manually edit GGPT based on the output
 
